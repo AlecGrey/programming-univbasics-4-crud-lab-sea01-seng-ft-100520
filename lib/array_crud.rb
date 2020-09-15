@@ -1,3 +1,5 @@
+array = [0, 1, 2, 3]
+
 def create_an_empty_array
   array = Array.new
 end
@@ -31,9 +33,11 @@ def retrieve_first_element_from_array(array)
 end
 
 def retrieve_last_element_from_array(array)
-  array[array.length - 1]
+  array[- 1]
 end
 
 def update_element_from_index(array, index_number, element)
   array[index_number] = element
 end
+
+puts retrieve_last_element_from_array(array)
